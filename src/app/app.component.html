@@ -1,1 +1,7 @@
-component updated!
+<button (click)="llamadaAPI()">
+    Llamar API
+</button>
+<div *ngIf="loading">loading...</div>
+<pre>
+{{ data | json}}
+</pre>
